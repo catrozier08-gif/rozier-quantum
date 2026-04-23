@@ -35,6 +35,9 @@ Rozier Quantum is built for secure, air-gapped laboratory environments.
 *   **Local Execution:** All analysis is performed entirely on the local machine.
 *   **No Obfuscation:** The source code is clean, PEP8 compliant, and open for audit.
 
+##Consulting & Implementation
+Rozier Quantum LLC provides specialized architectural audits, custom topology mapping, and advanced routing optimization for hardware manufacturers and research teams. For pilot programs or custom integration, contact chris.rozier@rozierquantum.com.
+
 ---
 
 ## 🚀 Quick Start
