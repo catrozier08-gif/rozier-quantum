@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rozier-quantum"
+version = "1.3.2"
+description = "Structural diagnostic reader for multi-chip quantum computing systems"
+readme = "README.md"
+license = { text = "Proprietary" }
+authors = [
+    { name = "Rozier Quantum LLC", email = "contact@rozierquantum.com" }
+]
+keywords = [
+    "quantum computing",
+    "qubit placement",
+    "quantum diagnostics",
+    "multi-chip quantum",
+    "quantum hardware",
+    "qiskit",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+
+dependencies = [
+    "qiskit>=1.0.0",
+    "networkx>=3.0",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+server = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.29.0",
+    "python-multipart>=0.0.9",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.23",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+rozier-demo = "rozier.demo:main"
+
+[project.urls]
+Homepage = "https://rozierquantum.com"
+GitHub = "https://github.com/catrozier08-gif"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rozier*"]
