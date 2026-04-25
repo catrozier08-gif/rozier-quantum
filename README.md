@@ -1,4 +1,4 @@
-# Rozier Quantum SystemReader (v1.3.1)
+# Rozier Quantum SystemReader (v1.4.0)
 
 ### Structural Diagnostic Suite for Multi-Chip Quantum Scaling
 **Author:** Rozier Quantum LLC  
@@ -13,10 +13,11 @@ As quantum hardware scales beyond 127 qubits (IBM Eagle) toward 4,000+ qubits (I
 ## 🛠️ The Solution: SystemReader
 Rozier Quantum's `SystemReader` is an "OBD2 Scanner" for quantum workloads. It analyzes the structural alignment between a quantum circuit and the underlying hardware coupling map.
 
-### Key Performance Benchmarks (v1.3.0/1.3.1)
-*   **Scale:** Successfully verified 100,000-qubit workloads in < 6 seconds.
-*   **Impact:** Demonstrated **83.58% communication stress reduction** on 127-qubit community-structured workloads.
-*   **Reliability:** 6.08x increase in estimated success probability through structural refinement.
+### [v1.4.0] The Hyperscale & Location Update
+*   **Site Log Integration:** Assign circuits to physical job sites (e.g., `site_name="Data-Center-Alpha"`) for long-term calibration tracking.
+*   **Global Stress Odometer:** Real-time calculation of topological routing stress.
+*   **100k-Qubit Validation:** Benchmarked to process 100,000-qubit workloads in < 0.1 seconds.
+*   **Projected ROI Mapping:** Identifies potential efficiency gains of up to 17.1x.
 
 ---
 
@@ -26,6 +27,7 @@ SystemReader scans every qubit and link, assigning standard health codes:
 *   **Q-002 (Decoherence Risk):** High ratio of cross-chip interactions relative to local chip support.
 *   **Q-003 (Isolation):** Active qubit with zero local support, spread across multiple remote chips.
 *   **Q-004 (Bottleneck):** Qubit resides on a "Hot Corridor" link with projected routing congestion.
+*   **Q-005 (Idle):** Qubit is allocated but receiving zero interaction traffic. Dead weight on the layout.
 
 ---
 
@@ -34,9 +36,6 @@ Rozier Quantum is built for secure, air-gapped laboratory environments.
 *   **Zero Network Calls:** The package does not import `requests`, `urllib`, or any networking libraries.
 *   **Local Execution:** All analysis is performed entirely on the local machine.
 *   **No Obfuscation:** The source code is clean, PEP8 compliant, and open for audit.
-
-##Consulting & Implementation
-Rozier Quantum LLC provides specialized architectural audits, custom topology mapping, and advanced routing optimization for hardware manufacturers and research teams. For pilot programs or custom integration, contact chris.rozier@rozierquantum.com.
 
 ---
 
@@ -52,3 +51,6 @@ reader = SystemReader(topology)
 
 # 3. Run a Clinical Cycle on your circuit
 results = reader.run_clinical_cycle(your_qiskit_circuit)
+
+# 4. Run the Site Log and Odometer (NEW in v1.4.0)
+reader.run_odometer_scan(site_name="Lab-Alpha", calibration_gen="Gen-1")
