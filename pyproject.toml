@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rozier-quantum"
-version = "1.3.2"
+version = "1.4.0"
 description = "Structural diagnostic reader for multi-chip quantum computing systems"
 readme = "README.md"
-license = { text = "Proprietary" }
+license = "Apache-2.0"
 authors = [
     { name = "Rozier Quantum LLC", email = "contact@rozierquantum.com" }
 ]
