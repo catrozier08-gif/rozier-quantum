@@ -53,4 +53,9 @@ reader = SystemReader(topology)
 results = reader.run_clinical_cycle(your_qiskit_circuit)
 
 # 4. Run the Site Log and Odometer (NEW in v1.4.0)
-reader.run_odometer_scan(site_name="Lab-Alpha", calibration_gen="Gen-1")
+reader = SystemReader(
+    topology,
+    site_name="Lab-Alpha",
+    calibration_gen="Gen-1"
+)
+reader.run_odometer_scan(your_qiskit_circuit)
