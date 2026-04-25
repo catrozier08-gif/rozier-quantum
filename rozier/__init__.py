@@ -1,9 +1,8 @@
 # rozier/__init__.py
 
+from .version import __version__
 from .api import preflight, analyze, RozierOptimizer, summarize_result
 from .topology import MultiChipTopology, build_line_topology
-from .version import __version__
-from .reader import SystemReader
 from .perception import PerceptionEngine
 from .diagnosis import DiagnosisEngine
 from .qubit_health import QubitHealthScanner
@@ -21,6 +20,8 @@ from .vendors import (
     translate_term,
 )
 from .export import export_json, export_markdown, export_pdf
+from .optimizer import StablePlacementOptimizer
+from .reader import SystemReader
 
 __all__ = [
     # Core API
@@ -39,6 +40,7 @@ __all__ = [
     "DiagnosisEngine",
     "QubitHealthScanner",
     "PathMapper",
+    "StablePlacementOptimizer",
 
     # Configuration
     "QUBIT_HEALTH_BASELINE",
