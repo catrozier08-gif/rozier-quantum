@@ -191,6 +191,8 @@ rozierquantum.com
 | Hyperscale Validated  | 100,000 qubits     |
 | Security              | Zero network calls |
 | License               | Apache 2.0         |
+| Bridge Overload       | Q-007              |
+| Thermal Risk          | Q-008              |
 
 ---
 
