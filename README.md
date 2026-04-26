@@ -127,7 +127,7 @@ results = reader.run_clinical_cycle(your_qiskit_circuit)
 # 4. Run the Grid-Aware Odometer (v1.4.1)
 # Returns stress, grid waste (kW), ROI, and scan duration
 scan = reader.run_odometer_scan(your_qiskit_circuit)
-'''
+
 
 ---
 
