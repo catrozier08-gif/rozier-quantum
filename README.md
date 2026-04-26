@@ -138,7 +138,7 @@ preview = reader.run_structural_preview(your_qiskit_circuit)
 
 ---
 
-## Sample Odometer Output (v1.4.1)
+## Sample Odometer Output (v1.5.0)
 
     [ROZIER QUANTUM SITE LOG]
     SITE:        Lab-Alpha
@@ -163,7 +163,7 @@ preview = reader.run_structural_preview(your_qiskit_circuit)
 ---
 
 ## Roadmap
-*   **The Reader**   - Live v1.4.1
+*   **The Reader**   - Live v1.5.0
 *   **The Refiner**  - In Development
     (Hub-and-Spoke City Planning / Rideshare Batching /
     Thermal Balancing / Cross-Chip Bridge Bracing)
