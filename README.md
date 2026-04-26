@@ -89,7 +89,11 @@ health codes:
     generating measurable electrical waste. Reported in 
     estimated kW. Bridges quantum diagnostics to real-world 
     energy and utility grid impact.
-
+*    **Q-007 (Bridge Overload):** Excessive cross-chip 
+    communication detected. Routing optimization required.
+*    **Q-008 (Thermal Risk):** Dangerous qubit load 
+    concentration detected. Load balancing required.
+   
 ---
 
 ## 🛡️ Security & Integrity Statement
