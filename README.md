@@ -128,6 +128,9 @@ results = reader.run_clinical_cycle(your_qiskit_circuit)
 # Returns stress, grid waste (kW), ROI, and scan duration
 scan = reader.run_odometer_scan(your_qiskit_circuit)
 
+# 5. Run the Structural Preview (NEW in v1.5.0)
+preview = reader.run_structural_preview(your_qiskit_circuit)
+
 
 ---
 
