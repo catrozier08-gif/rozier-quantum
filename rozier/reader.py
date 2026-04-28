@@ -209,7 +209,9 @@ class SystemReader:
                 largest_community = total_qubits
 
         # 2. Q-007: BRIDGE OVERLOAD
-        chip_size = self.topology.qubits_per_chip
+        # Handle both list and int formats
+        qpcs = self.topology.qubits_per_chip
+        chip_size = qpcs[0] if isinstance(qpcs, list) else qpcs
         num_chips = self.topology.num_chips
 
         cross_chip_edges = 0
