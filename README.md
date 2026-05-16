@@ -9,10 +9,9 @@
 ## Who Built This
 
 My name is Chris Rozier. I'm a carpenter and layout lead
-from Fort Wayne, Indiana. I grew up bouncing between tents
-and shelter homes. I have a wife and two kids.
+from Fort Wayne, Indiana. I grew up bouncing between tents, shelter homes, friends places, and from school to school but i always had a loving mother and family that gave me my outlook through all that. I now have a wife and two kids and want to show that money doesn't measure all by showing you can dream big and achieve.
 
-I started using AI in January 2025 to answer physics
+I started using AI in January 2026 to answer physics
 questions I'd been carrying for years. That led to a
 patent-pending quantum computing architecture. That led
 to this tool.
