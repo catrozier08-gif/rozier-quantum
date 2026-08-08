@@ -1,6 +1,20 @@
 
 # ROZIER QUANTUM — CHANGELOG
 
+## 2.1.1 - 2026-08-08 - The Refinement Release + Real Heron
+- Adds RefinementEngine with pack_toolbags() louvain by traffic_density, generate_gravity_map() connectivity*noise_dist
+- Real hardware benchmark ibm_kingston 156q Heron: 100 edges all cross, pre cross 100->post 64 = 36% fewer, stress 4000->1930=51.7% reduction
+- Toolbags 3, gravity top 3 [14,15,18]
+
+## 2.1.0 - Self-Healing Executing
+- fix_quantum() now executes and verifies - rewires graph, measures real post_stress
+- 1000 0.011s, 10k 0.11s, 100k 1.39s
+- Qiskit plugin RozierPass
+
+## 2.0.2 - Small linetypes fix
+## 2.0.0 - Self-Healing Release
+## 1.8.0 - Honest Layout diagnostic
+
 ## [1.6.0] - 2026-04-27 — THE INFRASTRUCTURE STANDARD UPDATE
 
 ### Added
