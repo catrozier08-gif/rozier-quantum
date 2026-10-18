@@ -1,10 +1,10 @@
-[build-system]
+﻿[build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "rozier-quantum"
-version = "1.6.0"
+version = "2.1.4"
 description = "Structural diagnostic reader for multi-chip quantum computing systems"
 readme = "README.md"
 license = "Apache-2.0"
@@ -63,4 +63,4 @@ where = ["."]
 include = ["rozier*"]
 
 [tool.setuptools.exclude-package-data]
-"*" = ["*.ipynb_checkpoints*", "refiner.py", "*.ipynb"]
+"*" = ["*.ipynb_checkpoints*", "*.ipynb"]
